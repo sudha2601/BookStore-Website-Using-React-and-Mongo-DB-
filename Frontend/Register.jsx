@@ -30,7 +30,7 @@ const Login = () => {
 
 
     try {
-      const c = await axios.post("http://localhost:3000/register", data)
+      const c = await axios.post("https://bookstore-website-backend.onrender.com/register", data)
       reset({
         Email: "",
         password: "",
