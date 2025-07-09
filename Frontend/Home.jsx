@@ -8,7 +8,7 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/book");
+        const response = await axios.get("https://bookstore-website-backend.onrender.com/book");
         const list = response.data;
         console.log("Fetched list:", list);
         setlist1(list.slice(1, 10));
