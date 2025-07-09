@@ -2,7 +2,7 @@ const express=require('express')
 const app=express()
 const cors=require("cors")
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/registeredusers').catch(error=> console.log(error));
+mongoose.connect('mongodb+srv://sudhanshusongire26:kkj9AjEGCAaWi0TT@mern2024.ot063.mongodb.net/?retryWrites=true&w=majority&appName=mern2024').catch(error=> console.log(error));
 
 const UserSchema=new mongoose.Schema({
     Email:String,
